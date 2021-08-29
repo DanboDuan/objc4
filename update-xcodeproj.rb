@@ -3,13 +3,8 @@ require 'xcodeproj'
 
 def update_deployment_config(config = nil)
     return if config.nil?
-    unless config.build_settings['SDKROOT'].nil? 
-        config.build_settings['SDKROOT'] = 'macosx'
-    end
-
-    unless config.build_settings['ORDER_FILE'].nil? 
-        config.build_settings['ORDER_FILE'] = '$(SRCROOT)/libobjc.order'
-    end
+    config.build_settings['SDKROOT'] = 'macosx'
+    config.build_settings['ORDER_FILE'] = '$(SRCROOT)/libobjc.order'
     config.build_settings['ONLY_ACTIVE_ARCH'] = 'YES'
 end
 
