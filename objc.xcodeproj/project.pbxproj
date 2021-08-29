@@ -149,6 +149,9 @@
 		C22F5208230EF38B001BFE14 /* objc-ptrauth.h in Headers */ = {isa = PBXBuildFile; fileRef = C22F5207230EF38B001BFE14 /* objc-ptrauth.h */; };
 		C2E6D3FC2225DCF00059DFAA /* DenseMapExtras.h in Headers */ = {isa = PBXBuildFile; fileRef = C2E6D3FB2225DCF00059DFAA /* DenseMapExtras.h */; };
 		C2EB731D23D8A38A0040672B /* dummy-library-mac-i386.c in Sources */ = {isa = PBXBuildFile; fileRef = C2EB731C23D8A38A0040672B /* dummy-library-mac-i386.c */; };
+		C4F6A54D26DB96740068F6C4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F6A54C26DB96740068F6C4 /* main.m */; };
+		C4F6A55326DB96AE0068F6C4 /* TestPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = C4F6A55226DB96AE0068F6C4 /* TestPerson.m */; };
+		C4F6A55426DB973B0068F6C4 /* libobjc.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC0630554660B00DB518D /* libobjc.A.dylib */; };
 		E8923DA5116AB2820071B552 /* objc-block-trampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = E8923DA0116AB2820071B552 /* objc-block-trampolines.mm */; };
 		E934A9F123E996D00088F26F /* objc4.plist in CopyFiles */ = {isa = PBXBuildFile; fileRef = E934A9EF23E9967D0088F26F /* objc4.plist */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F378CAC725534BC000AC8F83 /* module.modulemap in Headers */ = {isa = PBXBuildFile; fileRef = F378CAC625534BAC00AC8F83 /* module.modulemap */; settings = {ATTRIBUTES = (Private, ); }; };
@@ -164,6 +167,13 @@
 			remoteInfo = objcdt;
 		};
 		837F67AC1A771F6E004D34FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC0620554660B00DB518D;
+			remoteInfo = objc;
+		};
+		C4F6A55626DB973B0068F6C4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08FB7793FE84155DC02AAC07 /* Project object */;
 			proxyType = 1;
@@ -189,6 +199,15 @@
 				6EF877EC232635A700963DBB /* objcdt.1 in Install Manpages */,
 			);
 			name = "Install Manpages";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		C4F6A54826DB96740068F6C4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		E934A9F023E996CC0088F26F /* CopyFiles */ = {
@@ -319,6 +338,10 @@
 		C22F5207230EF38B001BFE14 /* objc-ptrauth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "objc-ptrauth.h"; path = "runtime/objc-ptrauth.h"; sourceTree = "<group>"; };
 		C2E6D3FB2225DCF00059DFAA /* DenseMapExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DenseMapExtras.h; path = runtime/DenseMapExtras.h; sourceTree = "<group>"; };
 		C2EB731C23D8A38A0040672B /* dummy-library-mac-i386.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = "dummy-library-mac-i386.c"; path = "runtime/dummy-library-mac-i386.c"; sourceTree = "<group>"; };
+		C4F6A54A26DB96740068F6C4 /* TestObjc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestObjc; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4F6A54C26DB96740068F6C4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C4F6A55126DB96AE0068F6C4 /* TestPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPerson.h; sourceTree = "<group>"; };
+		C4F6A55226DB96AE0068F6C4 /* TestPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPerson.m; sourceTree = "<group>"; };
 		D2AAC0630554660B00DB518D /* libobjc.A.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libobjc.A.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8923D9C116AB2820071B552 /* objc-blocktramps-i386.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-blocktramps-i386.s"; path = "runtime/objc-blocktramps-i386.s"; sourceTree = "<group>"; };
 		E8923D9D116AB2820071B552 /* objc-blocktramps-x86_64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-blocktramps-x86_64.s"; path = "runtime/objc-blocktramps-x86_64.s"; sourceTree = "<group>"; };
@@ -338,6 +361,14 @@
 				6EF877E22325D93200963DBB /* Symbolication.framework in Frameworks */,
 				6EF877E52325FAC400963DBB /* Foundation.framework in Frameworks */,
 				6EF877E02325D92E00963DBB /* CoreSymbolication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F6A54726DB96740068F6C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F6A55426DB973B0068F6C4 /* libobjc.A.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +402,7 @@
 				838485B20D6D67F900CEA253 /* Other */,
 				6EF877D82325D62600963DBB /* objcdt */,
 				E9AD465824925261002AF1DB /* check-preopt-caches */,
+				C4F6A54B26DB96740068F6C4 /* TestObjc */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 				F9BCC72A205C6A1600DD9AFC /* Frameworks */,
 			);
@@ -436,6 +468,7 @@
 				D2AAC0630554660B00DB518D /* libobjc.A.dylib */,
 				F9BCC727205C68E800DD9AFC /* libobjc-trampolines.dylib */,
 				6EF877D72325D62600963DBB /* objcdt */,
+				C4F6A54A26DB96740068F6C4 /* TestObjc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -558,6 +591,16 @@
 			name = "Project Headers";
 			sourceTree = "<group>";
 		};
+		C4F6A54B26DB96740068F6C4 /* TestObjc */ = {
+			isa = PBXGroup;
+			children = (
+				C4F6A54C26DB96740068F6C4 /* main.m */,
+				C4F6A55126DB96AE0068F6C4 /* TestPerson.h */,
+				C4F6A55226DB96AE0068F6C4 /* TestPerson.m */,
+			);
+			path = TestObjc;
+			sourceTree = "<group>";
+		};
 		E9AD465824925261002AF1DB /* check-preopt-caches */ = {
 			isa = PBXGroup;
 			children = (
@@ -668,6 +711,24 @@
 			productReference = 6EF877D72325D62600963DBB /* objcdt */;
 			productType = "com.apple.product-type.tool";
 		};
+		C4F6A54926DB96740068F6C4 /* TestObjc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4F6A54E26DB96740068F6C4 /* Build configuration list for PBXNativeTarget "TestObjc" */;
+			buildPhases = (
+				C4F6A54626DB96740068F6C4 /* Sources */,
+				C4F6A54726DB96740068F6C4 /* Frameworks */,
+				C4F6A54826DB96740068F6C4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4F6A55726DB973B0068F6C4 /* PBXTargetDependency */,
+			);
+			name = TestObjc;
+			productName = TestObjc;
+			productReference = C4F6A54A26DB96740068F6C4 /* TestObjc */;
+			productType = "com.apple.product-type.tool";
+		};
 		D2AAC0620554660B00DB518D /* objc */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1DEB914A08733D8E0010E9CD /* Build configuration list for PBXNativeTarget "objc" */;
@@ -729,6 +790,10 @@
 					837F67A81A771F63004D34FA = {
 						CreatedOnToolsVersion = 6.3;
 					};
+					C4F6A54926DB96740068F6C4 = {
+						CreatedOnToolsVersion = 12.5.1;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 1DEB914E08733D8E0010E9CD /* Build configuration list for PBXProject "objc" */;
@@ -742,6 +807,7 @@
 				German,
 			);
 			mainGroup = 08FB7794FE84155DC02AAC07 /* objc */;
+			productRefGroup = 1AB674ADFE9D54B511CA2CBB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -751,6 +817,7 @@
 				834F9B01212E560100F95A54 /* objc4_tests */,
 				6EF877EF23263D7000963DBB /* objc_executables */,
 				6EF877D62325D62600963DBB /* objcdt */,
+				C4F6A54926DB96740068F6C4 /* TestObjc */,
 			);
 		};
 /* End PBXProject section */
@@ -769,7 +836,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "set -x\n/usr/bin/xcrun -sdk macosx.internal clang++ -Wall -mmacosx-version-min=10.12 -arch x86_64 -std=c++11 \"${SRCROOT}/markgc.cpp\" -o \"${BUILT_PRODUCTS_DIR}/markgc\"\n\"${BUILT_PRODUCTS_DIR}/markgc\" \"${BUILT_PRODUCTS_DIR}/libobjc.A.dylib\"";
+			shellScript = "set -x\n/usr/bin/xcrun -sdk macosx clang++ -Wall -mmacosx-version-min=10.12 -arch arm64 -std=c++11 \"${SRCROOT}/markgc.cpp\" -o \"${BUILT_PRODUCTS_DIR}/markgc\"\n\"${BUILT_PRODUCTS_DIR}/markgc\" \"${BUILT_PRODUCTS_DIR}/libobjc.A.dylib\"\n";
 		};
 		830F2AFA0D73BC5800392440 /* Run Script (symlink) */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -813,6 +880,15 @@
 				6EF877E82326184000963DBB /* json.mm in Sources */,
 				6EF877DA2325D62600963DBB /* objcdt.mm in Sources */,
 				6EF877DE2325D79000963DBB /* objc-probes.d in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F6A54626DB96740068F6C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4F6A54D26DB96740068F6C4 /* main.m in Sources */,
+				C4F6A55326DB96AE0068F6C4 /* TestPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -891,6 +967,11 @@
 			target = D2AAC0620554660B00DB518D /* objc */;
 			targetProxy = 837F67AC1A771F6E004D34FA /* PBXContainerItemProxy */;
 		};
+		C4F6A55726DB973B0068F6C4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC0620554660B00DB518D /* objc */;
+			targetProxy = C4F6A55626DB973B0068F6C4 /* PBXContainerItemProxy */;
+		};
 		F9BCC729205C6A0900DD9AFC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F9BCC6CA205C68E800DD9AFC /* objc-trampolines */;
@@ -920,12 +1001,14 @@
 					"$(CONFIGURATION_BUILD_DIR)/usr/include/**",
 					"$(CONFIGURATION_BUILD_DIR)/usr/local/include/**",
 					/System/Library/Frameworks/System.framework/PrivateHeaders,
+					"$(SRCROOT)/addon",
 				);
 				"INCLUDED_SOURCE_FILE_NAMES[sdk=macosx*][arch=i386]" = "dummy-library-mac-i386.c";
 				INSTALL_PATH = /usr/lib;
 				IS_ZIPPERED = YES;
 				LLVM_LTO = NO;
-				ORDER_FILE = "$(SDKROOT)/AppleInternal/OrderFiles/libobjc.order";
+				ONLY_ACTIVE_ARCH = YES;
+				ORDER_FILE = "$(SRCROOT)/libobjc.order";
 				"ORDER_FILE[sdk=iphonesimulator*]" = "";
 				OTHER_CFLAGS = (
 					"-fdollars-in-identifiers",
@@ -960,7 +1043,6 @@
 					interposable.txt,
 				);
 				"OTHER_LDFLAGS[sdk=macosx*]" = (
-					"-lCrashReporterClient",
 					"-lc++abi",
 					"-Xlinker",
 					"-sectalign",
@@ -974,13 +1056,13 @@
 					"-interposable_list",
 					"-Xlinker",
 					interposable.txt,
-					"-loah",
 				);
 				"OTHER_LDFLAGS[sdk=macosx*][arch=i386]" = "-nodefaultlibs";
 				OTHER_TAPI_FLAGS = "-exclude-public-header $(DSTROOT)/usr/include/objc/ObjectiveC.apinotes -exclude-public-header $(DSTROOT)/usr/include/objc/module.modulemap -Xparser -Wno-deprecated-declarations -Xparser -Wno-unavailable-declarations -Xparser -D_OBJC_PRIVATE_H_=1 -DOBJC_DECLARE_SYMBOLS=1";
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/objc;
 				PRODUCT_NAME = objc.A;
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/include/objc;
+				SDKROOT = macosx;
 				SUPPORTS_TEXT_BASED_API = YES;
 				TAPI_VERIFY_MODE = Pedantic;
 				UNEXPORTED_SYMBOLS_FILE = unexported_symbols;
@@ -1006,11 +1088,13 @@
 					"$(CONFIGURATION_BUILD_DIR)/usr/include/**",
 					"$(CONFIGURATION_BUILD_DIR)/usr/local/include/**",
 					/System/Library/Frameworks/System.framework/PrivateHeaders,
+					"$(SRCROOT)/addon",
 				);
 				"INCLUDED_SOURCE_FILE_NAMES[sdk=macosx*][arch=i386]" = "dummy-library-mac-i386.c";
 				INSTALL_PATH = /usr/lib;
 				IS_ZIPPERED = YES;
-				ORDER_FILE = "$(SDKROOT)/AppleInternal/OrderFiles/libobjc.order";
+				ONLY_ACTIVE_ARCH = YES;
+				ORDER_FILE = "$(SRCROOT)/libobjc.order";
 				"ORDER_FILE[sdk=iphonesimulator*]" = "";
 				OTHER_CFLAGS = (
 					"-fdollars-in-identifiers",
@@ -1045,7 +1129,6 @@
 					interposable.txt,
 				);
 				"OTHER_LDFLAGS[sdk=macosx*]" = (
-					"-lCrashReporterClient",
 					"-lc++abi",
 					"-Xlinker",
 					"-sectalign",
@@ -1059,13 +1142,13 @@
 					"-interposable_list",
 					"-Xlinker",
 					interposable.txt,
-					"-loah",
 				);
 				"OTHER_LDFLAGS[sdk=macosx*][arch=i386]" = "-nodefaultlibs";
 				OTHER_TAPI_FLAGS = "-exclude-public-header $(DSTROOT)/usr/include/objc/ObjectiveC.apinotes -exclude-public-header $(DSTROOT)/usr/include/objc/module.modulemap -Xparser -Wno-deprecated-declarations -Xparser -Wno-unavailable-declarations -Xparser -D_OBJC_PRIVATE_H_=1 -DOBJC_DECLARE_SYMBOLS=1";
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/objc;
 				PRODUCT_NAME = objc.A;
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/include/objc;
+				SDKROOT = macosx;
 				SUPPORTS_TEXT_BASED_API = YES;
 				TAPI_VERIFY_MODE = Pedantic;
 				UNEXPORTED_SYMBOLS_FILE = unexported_symbols;
@@ -1103,13 +1186,14 @@
 				GCC_WARN_SHADOW = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LLVM_LTO = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "";
 				"OTHER_CFLAGS[arch=x86_64]" = "-fobjc-legacy-dispatch";
 				OTHER_CPLUSPLUSFLAGS = (
 					"$(OTHER_CFLAGS)",
 					"-D_LIBCPP_VISIBLE=\"\"",
 				);
-				SDKROOT = macosx.internal;
+				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos watchos";
 				WARNING_CFLAGS = (
 					"-Wall",
@@ -1149,6 +1233,7 @@
 				GCC_WARN_SHADOW = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LLVM_LTO = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-momit-leaf-frame-pointer";
 				"OTHER_CFLAGS[arch=x86_64]" = (
 					"-momit-leaf-frame-pointer",
@@ -1158,7 +1243,7 @@
 					"$(OTHER_CFLAGS)",
 					"-D_LIBCPP_VISIBLE=\"\"",
 				);
-				SDKROOT = macosx.internal;
+				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphoneos appletvos watchos";
 				WARNING_CFLAGS = (
 					"-Wall",
@@ -1186,7 +1271,9 @@
 					"$(SRCROOT)/runtime",
 					/System/Library/Frameworks/System.framework/PrivateHeaders,
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited) $(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks";
 			};
 			name = Debug;
@@ -1204,7 +1291,9 @@
 					"$(SRCROOT)/runtime",
 					/System/Library/Frameworks/System.framework/PrivateHeaders,
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				SYSTEM_FRAMEWORK_SEARCH_PATHS = "$(inherited) $(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks";
 			};
 			name = Release;
@@ -1213,7 +1302,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -1221,7 +1312,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
@@ -1230,7 +1323,9 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59GAB85EFG;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
@@ -1239,20 +1334,127 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 59GAB85EFG;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
 		837F67AA1A771F63004D34FA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		837F67AB1A771F63004D34FA /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C4F6A54F26DB96740068F6C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C4F6A55026DB96740068F6C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -1279,6 +1481,7 @@
 				);
 				INSTALL_PATH = /usr/lib;
 				IS_ZIPPERED = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"-fdollars-in-identifiers",
 					"$(OTHER_CFLAGS)",
@@ -1291,6 +1494,7 @@
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/objc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/include/objc;
+				SDKROOT = macosx;
 				SUPPORTS_TEXT_BASED_API = YES;
 				TAPI_VERIFY_MODE = Pedantic;
 			};
@@ -1316,6 +1520,7 @@
 				);
 				INSTALL_PATH = /usr/lib;
 				IS_ZIPPERED = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = (
 					"-fdollars-in-identifiers",
 					"$(OTHER_CFLAGS)",
@@ -1328,6 +1533,7 @@
 				PRIVATE_HEADERS_FOLDER_PATH = /usr/local/include/objc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = /usr/include/objc;
+				SDKROOT = macosx;
 				SUPPORTS_TEXT_BASED_API = YES;
 				TAPI_VERIFY_MODE = Pedantic;
 			};
@@ -1386,6 +1592,15 @@
 			buildConfigurations = (
 				837F67AA1A771F63004D34FA /* Debug */,
 				837F67AB1A771F63004D34FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4F6A54E26DB96740068F6C4 /* Build configuration list for PBXNativeTarget "TestObjc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4F6A54F26DB96740068F6C4 /* Debug */,
+				C4F6A55026DB96740068F6C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
